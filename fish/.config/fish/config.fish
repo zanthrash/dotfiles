@@ -3,7 +3,10 @@ if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
 
+set -gx NVM_DIR (brew --prefix nvm)
+
 set -g fish_key_bindings fish_vi_key_bindings
+
 # Emulates vim's cursor shape behavior
 # Set the normal and visual mode cursors to a block
 set fish_cursor_default block blink
@@ -20,6 +23,7 @@ set fish_cursor_external line
 set fish_cursor_visual block
 
 set fish_vi_force_cursor 1
+
 
 starship init fish | source
 
