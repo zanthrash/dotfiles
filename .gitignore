@@ -1,3 +1,4 @@
 .DS_Store
 
 fish/**/_*.fish
+fish/.config/fish/conf.d/*.fish
