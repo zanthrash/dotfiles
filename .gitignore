@@ -1,5 +1,2 @@
 .DS_Store
 
-fish/**/_*.fish
-fish/.config/fish/conf.d/*.fish
-fish/.config/fish/fish_variables

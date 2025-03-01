@@ -1,9 +1,13 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    # eval (zellij setup --generate-auto-start fish | string collect)
+
 end
 
-set -gx NVM_DIR (brew --prefix nvm)
+# SOURCES
+source ~/.config/fish/my_functions.fish
+
+
+# PATHS
+fish_add_path /opt/homebrew/bin
 
 set -g fish_key_bindings fish_vi_key_bindings
 
@@ -23,7 +27,6 @@ set fish_cursor_external line
 set fish_cursor_visual block
 
 set fish_vi_force_cursor 1
-
 
 starship init fish | source
 
