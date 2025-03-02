@@ -9,6 +9,8 @@ source ~/.config/fish/my_functions.fish
 # PATHS
 fish_add_path /opt/homebrew/bin
 
+fnm env --use-on-cd --shell fish | source
+
 set -g fish_key_bindings fish_vi_key_bindings
 
 # Emulates vim's cursor shape behavior
