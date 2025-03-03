@@ -8,6 +8,7 @@ source ~/.config/fish/my_functions.fish
 
 # PATHS
 fish_add_path /opt/homebrew/bin
+fish_add_path ~/.local/bin
 
 fnm env --use-on-cd --shell fish | source
 
