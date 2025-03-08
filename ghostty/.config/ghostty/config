@@ -1,0 +1,31 @@
+# Fonts
+font-family-italic = "Maple Mono"
+font-family-bold-italic = "Maple Mono"
+
+
+# Therme
+theme = tokyonight
+font-size = 18
+background-blur-radius = 20
+mouse-hide-while-typing = true
+cursor-invert-fg-bg = true
+background-opacity = 1
+
+
+
+# keybind = global:cmd+/=toggle_quick_terminal
+macos-option-as-alt = true
+copy-on-select = clipboard
+window-decoration = auto
+shell-integration-features = cursor,sudo,no-title
+
+# macos-icon = blueprint
+# macos-icon = chalkboard 
+# macos-icon = microchip
+# macos-icon = glass 
+# macos-icon = holographic
+# macos-icon = paper 
+# macos-icon = retro 
+macos-icon = xray 
+
+
