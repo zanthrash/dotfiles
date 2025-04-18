@@ -5,6 +5,10 @@ end
 # SOURCES
 source ~/.config/fish/my_functions.fish
 
+# LOCAL config
+if test -e ~/.config/local.fish
+    source ~/.config/local.fish
+end
 
 # PATHS
 fish_add_path /opt/homebrew/bin

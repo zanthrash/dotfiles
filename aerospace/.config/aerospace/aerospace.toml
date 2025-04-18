@@ -12,11 +12,11 @@ after-login-command = []
 after-startup-command = [
   # JankyBorders has a built-in detection of already running process,
   # so it won't be run twice on AeroSpace restart
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0',
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=10.0',
 ]
 
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -24,8 +24,9 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
-# You can set 0 to disable the padding feature
-accordion-padding = 15
+# You can set 0 to disable the padding featureG
+accordion-padding = 30
+
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -62,12 +63,12 @@ preset = 'qwerty'
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 5
-inner.vertical = 5
-outer.left = 5
-outer.bottom = 5
-outer.top = 5
-outer.right = 5
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -131,28 +132,28 @@ alt-5 = 'workspace 5'
 # alt-7 = 'workspace 7'
 # alt-8 = 'workspace 8'
 # alt-9 = 'workspace 9'
-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+# alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
 alt-b = 'workspace B' # Browser
 alt-c = 'workspace C' # Communication [Outlook, Spart, Slack, Zoom ]
-alt-d = 'workspace D'
-alt-e = 'workspace E'
+# alt-d = 'workspace D'
+# alt-e = 'workspace E'
 # alt-f = 'workspace F'
-alt-g = 'workspace G'
-alt-i = 'workspace I'
+# alt-g = 'workspace G'
+# alt-i = 'workspace I'
 alt-m = 'workspace M' # Music Spotify
 # alt-n = 'workspace N'
-alt-o = 'workspace O' # Obsidian
-alt-p = 'workspace P'
-alt-q = 'workspace Q'
-alt-r = 'workspace R'
-alt-s = 'workspace S'
+alt-o = 'workspace O' # Notes
+# alt-p = 'workspace P'
+# alt-q = 'workspace Q'
+# alt-r = 'workspace R'
+# alt-s = 'workspace S'
 alt-t = 'workspace T' # Terminal Ghostty
-alt-u = 'workspace U'
-alt-v = 'workspace V'
-alt-w = 'workspace W'
-alt-x = 'workspace X'
-alt-y = 'workspace Y'
-alt-z = 'workspace Z'
+# alt-u = 'workspace U'
+# alt-v = 'workspace V'
+alt-w = 'workspace W' # Work IDE + Browser
+# alt-x = 'workspace X'
+# alt-y = 'workspace Y'
+# alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -164,36 +165,59 @@ alt-shift-5 = 'move-node-to-workspace 5'
 # alt-shift-7 = 'move-node-to-workspace 7'
 # alt-shift-8 = 'move-node-to-workspace 8'
 # alt-shift-9 = 'move-node-to-workspace 9'
-alt-shift-a = 'move-node-to-workspace A'
+# alt-shift-a = 'move-node-to-workspace A'
 alt-shift-b = 'move-node-to-workspace B'
 alt-shift-c = 'move-node-to-workspace C'
-alt-shift-d = 'move-node-to-workspace D'
-alt-shift-e = 'move-node-to-workspace E'
-alt-shift-g = 'move-node-to-workspace G'
-alt-shift-i = 'move-node-to-workspace I'
-alt-shift-m = 'move-node-to-workspace M'
+# alt-shift-d = 'move-node-to-workspace D'
+# alt-shift-e = 'move-node-to-workspace E'
+# alt-shift-g = 'move-node-to-workspace G'
+# alt-shift-i = 'move-node-to-workspace I'
+# alt-shift-m = 'move-node-to-workspace M'
 # alt-shift-n = 'move-node-to-workspace N'
 alt-shift-o = 'move-node-to-workspace O'
-alt-shift-p = 'move-node-to-workspace P'
-alt-shift-q = 'move-node-to-workspace Q'
-alt-shift-r = 'move-node-to-workspace R'
-alt-shift-s = 'move-node-to-workspace S'
+# alt-shift-p = 'move-node-to-workspace P'
+# alt-shift-q = 'move-node-to-workspace Q'
+# alt-shift-r = 'move-node-to-workspace R'
+# alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
-alt-shift-u = 'move-node-to-workspace U'
-alt-shift-v = 'move-node-to-workspace V'
+# alt-shift-u = 'move-node-to-workspace U'
+# alt-shift-v = 'move-node-to-workspace V'
 alt-shift-w = 'move-node-to-workspace W'
-alt-shift-x = 'move-node-to-workspace X'
-alt-shift-y = 'move-node-to-workspace Y'
-alt-shift-z = 'move-node-to-workspace Z'
-
+# alt-shift-x = 'move-node-to-workspace X'
+# alt-shift-y = 'move-node-to-workspace Y'
+# alt-shift-z = 'move-node-to-workspace Z'
+#
 alt-shift-f = 'fullscreen'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
+
+[workspace-to-monitor-force-assignment]
+1 = ['secondary']
+2 = ['secondary']
+3 = ['secondary']
+5 = ['secondary']
+# C = ["main"]
+# W = ["secondary"]
+# M = ["main"]
+# R = ["main"]
+#
+#
+# [[on-window-detected]]
+# check-further-callbacks = true
+# run = 'layout floating'
+#
+# [[on-window-detected]]
+# if.app-id = "com.mitchellh.ghostty"
+# run = ["move-node-to-workspace W"]
+#
+# [[on-window-detected]]
+# if.app-id = "com.google.Chrome"
+# run = ["move-node-to-workspace W"]
+#
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
